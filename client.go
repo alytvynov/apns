@@ -163,6 +163,7 @@ func (c *Client) runLoop() {
 			}
 
 			if err != nil {
+				log.Println("reconnecting to APN; reason:", err)
 				break
 			}
 
